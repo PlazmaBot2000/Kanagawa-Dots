@@ -1,0 +1,77 @@
+* {	
+	indent: 15px;
+    bg-col: #1F1F28;
+    blue: #82c0af;
+    yellow: #d4c787;
+	grey: #595959;
+    fg-col: #2e2e33;
+
+
+	location:   center;
+	anchor:   center;
+    height: 500px;
+	width: 350px;    
+	font: "JetBrainsMono Nerd Font 13";
+}
+
+window {
+	y-offset: -44px;
+	margin: 10px;
+	padding: @indent;
+    background-color: @bg-col;	
+    border-radius: 10px;
+	border-color: @yellow;
+	border: 2px;
+}
+
+mainbox {
+    background-color: @bg-col;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-col;
+    border-radius: 5px;
+}
+
+entry {
+	border-radius: 5px;
+    padding: 6px;
+    margin: 0px 0px 15px 0px;
+    text-color: @yellow;
+    background-color: @fg-col;
+}
+
+listview {
+    columns: 1;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 5px;
+    background-color: @bg-col;
+    text-color: @yellow;
+    border-radius: 5px;
+}
+
+element-icon {
+    size: 24px;
+}
+
+element selected {
+    background-color:  @fg-col;
+    text-color: @blue;
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+button {
+	enabled : true;
+}
+
+prompt {
+	enabled : false;
+}

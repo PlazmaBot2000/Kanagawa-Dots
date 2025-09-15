@@ -1,0 +1,107 @@
+[
+  {
+	"height": 34,
+    "clock": {
+      "format": "{:%H:%M}",
+      "format-alt": "{:%d-%m-%Y}",
+	  "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right","custom/activewindow": {
+	  "return-type": "json",
+	  "format": "{}",
+	  "tooltip-format": "{}",
+	  "exec": "sh ~/.config/waybar/modules/test.sh",
+      "interval": 1,
+      "max-length": 40,
+    },
+
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#d4c787'><b>{}</b></span>",
+                              "days":       "<span color='#d4c787'><b>{}</b></span>",
+                              "weekdays":   "<span color='#6a9589'><b>{}</b></span>",
+                              "today":      "<span color='#e82424'><b><u>{}</u></b></span>"
+                            }
+                    },
+    "actions":  {
+                    "on-click-right": "mode",
+                  }
+    },
+	"custom/cava": {
+        "format": "{}",
+        "exec": "~/.config/waybar/modules/cava/cava.sh"
+    },
+	"custom/combinated": {
+	  	"tooltip": false,
+		"on-click": "rofi -show drun",
+      	"format": "{}",
+      	"max-length": 41,
+      	"min-length": 10,
+        "exec": "~/.config/waybar/modules/combinated.sh"
+    },
+    "custom/pipewire": {
+	  "return-type": "json",
+	  "format": "{}",
+	  "format-alt-scroll": "",
+	  "tooltip": true,
+      "exec": "sh ~/.config/waybar/modules/pipewire.sh",
+	  "interval": 1,
+	  "on-click": "pamixer -t; pkill -x -RTMIN+11 waybar",
+      "on-scroll-down": "pamixer -d4; pkill -x -RTMIN+11 waybar",
+      "on-scroll-up": "pamixer -i4; pkill -x -RTMIN+11 waybar",
+      "signal": 11,
+    },
+	"custom/battery": {
+	  "return-type": "json",
+	  "tooltip": true,
+	  "exec": "~/.config/waybar/modules/battery.sh",
+      "format": "{}",
+      "interval": 5,
+    },
+	"custom/activewindow": {
+	  "return-type": "json",
+	  "format": "{}",
+	  "exec": "sh ~/.config/waybar/modules/test.sh",
+      "interval": 1,
+      "max-length": 40,
+    },
+	"tray": {
+	  "icon-size": 15,
+      "spacing": 3
+    },
+	"hyprland/language": {
+      "format-en": "",
+      "format-ru": ""
+    },
+    "custom/window": {
+	  "tooltip": false,
+	  "exec": "hyprctl activewindow -j",
+	  "on-click": "rofi -show drun",
+	  "on-click-right": "rofi -show run",
+      "align": 0,
+      "format": "{title}",
+      "max-length": 30,
+      "min-length": 0
+    },
+    "modules-left": [
+		"hyprland/language",
+    	"hyprland/workspaces"
+	],
+	"modules-center": [
+		"custom/combinated",
+	],
+    "modules-right": [
+	  "tray",
+	  "custom/battery",
+	  "custom/pipewire",
+      "clock",
+    ],
+    "position": "top",
+    "spacing": 2,
+	"margin-top": 4,
+	"margin-right": 4,
+	
+	}
+]

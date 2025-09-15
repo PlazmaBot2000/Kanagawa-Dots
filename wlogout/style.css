@@ -1,0 +1,149 @@
+@define-color main-bg #1F1F28;
+@define-color main-fg #2e2e33;
+@define-color blue #82c0af;
+@define-color yellow #d4c787;
+@define-color grey #595959;
+
+
+
+* {
+    background-image: none;
+    font-size: 14px;
+}
+
+window {
+    background-color: transparent;
+}
+
+
+
+
+
+
+button {
+    color: @yellow;
+    background-color: @main-bg;
+    outline-style: none;
+	border: 2px solid @yellow;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in infinite;
+}
+
+#lock {
+	background-image: image(url("./icons/lock_white.png"));
+    border-radius: 10px 0px 0px 0px;
+	margin : 20px 0px 0px 20px;
+}
+
+#logout {
+	background-image: image(url("./icons/logout_white.png"));
+    border-radius: 0px 0px 0px 10px;
+    margin : 0px 0px 20px 20px;
+}
+
+#shutdown {
+	background-image: image(url("./icons/shutdown_white.png"));
+    border-radius: 0px 10px 0px 0px;
+    margin : 20px 20px 0px 0px;
+}
+
+#reboot {
+	background-image: image(url("./icons/reboot_white.png"));
+    border-radius: 0px 0px 10px 0px;
+    margin : 0px 20px 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================HOVER============================================*/
+button:hover {
+    background-color: @main-fg;
+    background-size: 25%;
+	border: 4px solid @blue;
+    border-radius: 10px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+button:hover#lock {
+    border-radius: 20px 20px 0px 20px;
+	margin : 0px 0px 0px 0px;
+	padding: 0px 20px 20px 0px; 
+}
+
+button:hover#logout {
+    border-radius: 20px 0px 20px 20px;
+    margin : 0px 0px 0px 0px;
+	padding: 20px 20px 0px 0px; 
+}
+
+button:hover#shutdown {
+    border-radius: 20px 20px 20px 0px;
+    margin : 0px 0px 0px 0px;
+	padding: 0px 0px 20px 20px; 
+}
+
+button:hover#reboot {
+    border-radius: 0px 20px 20px 20px;
+    margin : 0px 0px 0px 0px;
+	padding: 20px 0px 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*============================FOCUS====================================*/
+button:focus {
+    background-color: @main-fg;
+	border: 4px solid @blue;
+	border-radius: 10px;
+    background-size: 20%;
+	animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+button:focus#lock {
+    border-radius: 20px 20px 0px 20px;
+	margin : 0px 0px 0px 0px;
+	padding: 0px 20px 20px 0px;
+}
+
+button:focus#logout {
+    border-radius: 20px 0px 20px 20px;
+    margin : 0px 0px 0px 0px;
+	padding: 20px 20px 0px 0px;
+}
+
+button:focus#shutdown {
+    border-radius: 20px 20px 20px 0px;
+    margin : 0px 0px 0px 0px;
+	padding: 0px 0px 20px 20px;
+}
+
+button:focus#reboot {
+    border-radius: 0px 20px 20px 20px;
+    margin : 0px 0px 0px 0px;
+	padding: 20px 0px 0px 20px;
+}

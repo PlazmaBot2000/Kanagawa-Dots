@@ -1,0 +1,77 @@
+#custom-battery {
+	margin-left: 10px;
+	background-color: #1F1F28;
+	padding: 0;
+}
+#custom-cava {
+	background-color: #1F1F28;
+	padding: 0;
+}
+#custom-combinated {
+	background-color: #1F1F28;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#clock {
+	margin-left: 10px;
+	background-color: #1F1F28;
+	padding: 0;
+}
+#tray {
+	margin-left: 0px;
+	background-color: #1F1F28;
+	padding-left: 10px;
+}
+tooltip {
+	border-radius: 10px;
+	background-color: #1F1F28;
+}
+
+#custom-pipewire {
+	margin-left: 10px;
+	background-color: #1F1F28;
+	padding: 0;
+}
+#language {
+	background-color: #1F1F28;
+	padding: 5px;
+	padding-right: 10px;
+	font-size: 10pt;
+}
+#tray window{
+	border-radius: 10px;
+	background-color: #1F1F28;
+}
+#clock {
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #1F1F28;
+	padding: 0;
+}
+* {	
+	border-radius: 10px;
+	background-color: transparent;
+	color: #d4c787;
+	font-family: "JetBrainsMono Nerd Font";
+	font-size: 10pt;
+}
+#workspaces {
+	background-color: #1F1F28;
+	padding: 0;
+}
+#workspaces button {
+	padding: 3px;
+}
+#workspaces button.active {
+	border-radius: 10px;
+	border: 2px solid #ddc7a1;
+}
+.modules-right {
+	background-color: #1F1F28;
+	font-size: 26pt;
+	margin-right: 4px;
+}
+.modules-left {
+	background-color: #1F1F28;
+	margin-left: 4px;
+}
