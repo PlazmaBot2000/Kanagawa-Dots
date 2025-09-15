@@ -1,4 +1,4 @@
-# Kanagawa-Dots\
+# Kanagawa-Dots
 Based on [Kanagawa](https://github.com/rebelot/kanagawa.nvim) and [Kanagawa-paper](https://github.com/thesimonho/kanagawa-paper.nvim)
 
 ![Rofi](Pictures/Screenshot-1.png)
