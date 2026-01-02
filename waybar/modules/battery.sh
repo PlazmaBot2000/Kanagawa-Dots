@@ -1,7 +1,7 @@
 battery="BAT0"
 status=$(cat /sys/class/power_supply/$battery/status)
 capacity=$(cat /sys/class/power_supply/$battery/capacity)
-values=(10 30 50 70 90)
+values=(10 30 50 70 100)
 icons=(" " " " " " " " " ")
 charging_icon=""
 full_icon=""

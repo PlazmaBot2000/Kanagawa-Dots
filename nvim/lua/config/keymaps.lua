@@ -11,6 +11,7 @@ vim.keymap.set('n', '<A-w>', '<CMD>BufferClose<CR>')
 
 -- Terminal
 vim.keymap.set('n', '<leader>f', '<CMD>ToggleTerm direction=float<CR>')
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n><C-w>k')
 
 -- Telescope
 vim.keymap.set('n', 'tf', '<CMD>Telescope find_files<CR>', {desc = 'Search files'})

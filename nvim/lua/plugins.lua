@@ -20,6 +20,7 @@ return {
 	'hrsh7th/vim-vsnip',
 	'mattn/emmet-vim',
 	'dcampos/cmp-emmet-vim',
+	{ 'glepnir/nerdicons.nvim', opts = {}, cmd = 'NerdIcons' },
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	-- { 'Exafunction/codeium.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { enable_chat = true } },
 	'nvim-treesitter/nvim-treesitter',

@@ -84,10 +84,13 @@ editor_filesize_threshold=64M
 editor_stop_format_chars=-+*\\,.;:&>
 mcview_eof=
 skin=kanagawa256
+filepos_max_saved_entries=1024
+editor_wordcompletion_collect_entire_file=false
+editor_wordcompletion_collect_all_files=true
 
 [Layout]
 output_lines=0
-left_panel_size=117
+left_panel_size=86
 top_panel_size=0
 message_visible=false
 keybar_visible=false
@@ -96,7 +99,7 @@ command_prompt=true
 menubar_visible=false
 free_space=false
 horizontal_split=false
-vertical_equal=false
+vertical_equal=true
 horizontal_equal=true
 
 [Misc]
@@ -139,7 +142,7 @@ quick_search_mode=2
 select_flags=6
 
 [Panelize]
-Find rejects after patching=find . -name \\*.rej -print
-Find SUID and SGID programs=find . \\( \\( -perm -04000 -a -perm /011 \\) -o \\( -perm -02000 -a -perm /01 \\) \\) -print
 Find *.orig after patching=find . -name \\*.orig -print
+Find rejects after patching=find . -name \\*.rej -print
 Modified git files=git ls-files --modified
+Find SUID and SGID programs=find . \\( \\( -perm -04000 -a -perm /011 \\) -o \\( -perm -02000 -a -perm /01 \\) \\) -print

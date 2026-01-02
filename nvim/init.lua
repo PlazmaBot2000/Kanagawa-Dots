@@ -7,4 +7,4 @@ require('config/lsp')
 require('config/cmp')
 require('config/ts')
 require('config/lualine')
-
+vim.lsp.enable('pyright')

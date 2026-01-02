@@ -1,2 +1,2 @@
-local lsp = require('lspconfig')
-lsp.clangd.setup {}
+vim.lsp.enable('clangd')
+vim.lsp.enable('pyright')
